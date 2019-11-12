@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext .js, --ignore-path .gitignore .",
-    "format": "eslint --ext .js, --ignore-path .gitignore --fix ."
+    "format": "eslint --ext .js, --ignore-path .gitignore --fix .",
+    "release": "standard-version"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -29,6 +30,7 @@
     "husky": "^3.0.9",
     "postcss-easy-import": "^3.0.0",
     "prettier": "^1.19.1",
+    "standard-version": "^7.0.0",
     "tailwindcss": "^1.1.3"
   }
 }
