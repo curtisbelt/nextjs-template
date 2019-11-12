@@ -17,7 +17,8 @@ module.exports = {
   ],
   plugins: ['prettier', 'react'],
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    'react/react-in-jsx-scope': 0
   },
   settings: {
     react: {
