@@ -30,7 +30,7 @@
     "husky": "^4.2.5",
     "postcss-easy-import": "^3.0.0",
     "prettier": "^2.0.4",
-    "standard-version": "^7.1.0",
+    "standard-version": "^8.0.0",
     "tailwindcss": "^1.2.0"
   }
 }
