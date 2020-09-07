@@ -1,7 +1,9 @@
 {
   "name": "nextjs-template",
   "version": "0.1.2",
+  "author": "Curtis Belt <curtis@curtisbelt.dev>",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
