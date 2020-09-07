@@ -1,17 +1,18 @@
 module.exports = {
   plugins: [
-    require('postcss-easy-import'),
-    require('tailwindcss'),
-    ...(process.env.NODE_ENV === `production`
-      ? [
-          require('@fullhuman/postcss-purgecss')({
-            content: ['./src/**/*.js'],
-            defaultExtractor: (content) =>
-              content.match(/[A-Za-z0-9-_:/]+/g) || [],
-          }),
-          require('autoprefixer'),
-          require('cssnano'),
-        ]
-      : []),
+    'tailwindcss',
+    'postcss-flexbugs-fixes',
+    [
+      'postcss-preset-env',
+      {
+        autoprefixer: {
+          flexbox: 'no-2009',
+        },
+        stage: 3,
+        features: {
+          'custom-properties': false,
+        },
+      },
+    ],
   ],
 }
