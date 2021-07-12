@@ -1,6 +1,6 @@
 {
   "name": "nextjs-template",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "author": "Curtis Belt <curtis@curtisbelt.dev>",
   "private": true,
   "license": "MIT",
@@ -10,26 +10,30 @@
     "start": "next start",
     "lint": "eslint --ext .js, --ignore-path .gitignore .",
     "format": "eslint --ext .js, --ignore-path .gitignore --fix .",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "next": "9.5.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "autoprefixer": "^10.3.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.8.1",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.6",
-    "husky": "^4.3.0",
-    "postcss-flexbugs-fixes": "^4.2.1",
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.1",
+    "postcss": "^8.3.5",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.1.1",
-    "standard-version": "^9.0.0",
-    "tailwindcss": "^1.8.4"
+    "prettier": "^2.3.2",
+    "standard-version": "^9.3.0",
+    "tailwindcss": "^2.2.4"
   }
 }
