@@ -1,10 +1,9 @@
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./public/**/*.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    colors: {
+      current: 'currentColor',
+    },
   },
   plugins: [],
 }
